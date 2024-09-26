@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ÔN TẬP CHƯƠNG 2</title>
     <style>
-        /* CSS cho trang */
+        /* Đặt nền và font chữ cho toàn bộ trang */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
+            background-color: #f9fafb;
+            color: #333;
         }
 
         /* Hiệu ứng loading */
@@ -28,50 +29,58 @@
 
         #loading-text {
             font-size: 24px;
-            font-weight: bold;
-            color: #555;
+            font-weight: 600;
+            color: #3498db;
+            text-transform: uppercase;
         }
 
+        /* Thiết kế chính của container */
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #2c3e50;
+            margin-bottom: 30px;
         }
 
         h2 {
-            color: #2c3e50;
-            margin-top: 20px;
+            color: #2980b9;
+            font-size: 22px;
+            margin-bottom: 20px;
         }
 
         .question {
-            font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .answer {
-            margin-bottom: 20px;
-            color: #555;
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            line-height: 1.6;
         }
 
+        /* Footer */
         .footer {
-            margin-top: 40px;
+            margin-top: 30px;
             text-align: center;
             font-size: 14px;
-            color: #888;
+            color: #7f8c8d;
         }
 
-        /* Style cho các nút */
+        /* Nút */
         .button {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 24px;
             margin: 10px 0;
             background-color: #3498db;
             color: #fff;
@@ -79,11 +88,28 @@
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
             transition: background-color 0.3s ease;
         }
 
         .button:hover {
             background-color: #2980b9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .answer {
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -92,12 +118,12 @@
 
     <!-- Hiệu ứng loading -->
     <div id="loading">
-        <div id="loading-text">Loading...</div>
+        <div id="loading-text">Đang tải...</div>
     </div>
 
     <div class="container">
         <h1>ÔN TẬP CHƯƠNG 2</h1>
-        <h2>Sinh viên làm bài và nộp bản mềm báo cáo ghi rõ họ tên mã sv</h2>
+        <p>Sinh viên làm bài và nộp bản mềm báo cáo ghi rõ họ tên mã sinh viên</p>
 
         <!-- Câu hỏi 1 -->
         <div class="question">
@@ -105,22 +131,17 @@
         </div>
         <!-- Câu trả lời 1 -->
         <div class="answer">
-            <p>
-                <strong>Quản lý dự án công nghệ thông tin (CNTT)</strong><br><br>
-                Quản lý dự án CNTT là quá trình lập kế hoạch, tổ chức và theo dõi các dự án liên quan đến công nghệ trong tổ chức. 
-                Nó thường bao gồm việc dẫn dắt một dự án từ giai đoạn khởi động đến khi hoàn thành, đảm bảo các mục tiêu về thời gian, 
-                ngân sách và nguồn lực được thực hiện đúng. Để quản lý dự án CNTT hiệu quả, người quản lý không chỉ cần có kiến thức kỹ thuật 
-                mà còn phải có khả năng lãnh đạo, quản lý rủi ro và giao tiếp tốt.<br><br>
-                <strong>Dưới đây là một số yếu tố chính trong quản lý dự án CNTT:</strong>
-                <ul>
-                    <li><strong>Xác định phạm vi và mục tiêu:</strong> Người quản lý dự án làm việc với các bên liên quan để xác định phạm vi và mục tiêu của dự án.</li>
-                    <li><strong>Lựa chọn phương pháp quản lý:</strong> Các phương pháp phổ biến bao gồm Agile, Waterfall, Scrum.</li>
-                    <li><strong>Quản lý rủi ro:</strong> Các dự án CNTT thường đối mặt với các rủi ro như lỗi công nghệ, mở rộng phạm vi dự án (scope creep) hoặc chi phí phát sinh.</li>
-                    <li><strong>Phối hợp và giao tiếp nhóm:</strong> Thành công của dự án phụ thuộc vào giao tiếp rõ ràng giữa các thành viên nhóm.</li>
-                    <li><strong>Giám sát và báo cáo:</strong> Người quản lý dự án thường phải báo cáo cho các bên liên quan về tiến độ của dự án.</li>
-                </ul>
-                Tài nguyên quản lý dự án CNTT có thể được tìm thấy trên các trang như **InformationWeek**, **ComputerWorld**.
-            </p>
+            <p><strong>Quản lý dự án công nghệ thông tin (CNTT)</strong></p>
+            <p>Quản lý dự án CNTT là quá trình lập kế hoạch, tổ chức và theo dõi các dự án liên quan đến công nghệ trong tổ chức. Nó bao gồm việc dẫn dắt một dự án từ giai đoạn khởi động đến khi hoàn thành, đảm bảo các mục tiêu về thời gian, ngân sách và nguồn lực được thực hiện đúng. Người quản lý dự án không chỉ cần có kiến thức kỹ thuật mà còn phải có khả năng lãnh đạo, quản lý rủi ro và giao tiếp tốt.</p>
+
+            <p><strong>Một số yếu tố chính trong quản lý dự án CNTT:</strong></p>
+            <ul>
+                <li><strong>Xác định phạm vi và mục tiêu:</strong> Người quản lý làm việc với các bên liên quan để xác định phạm vi và mục tiêu của dự án.</li>
+                <li><strong>Lựa chọn phương pháp quản lý:</strong> Các phương pháp phổ biến bao gồm Agile, Waterfall, Scrum.</li>
+                <li><strong>Quản lý rủi ro:</strong> Nhận diện sớm các rủi ro và phát triển kế hoạch dự phòng.</li>
+                <li><strong>Phối hợp và giao tiếp nhóm:</strong> Sử dụng công cụ như Wrike hoặc JIRA để theo dõi và hợp tác.</li>
+                <li><strong>Giám sát và báo cáo:</strong> Giám sát tiến độ và điều chỉnh khi cần.</li>
+            </ul>
         </div>
 
         <!-- Câu hỏi 2 -->
@@ -129,25 +150,26 @@
         </div>
         <!-- Câu trả lời 2 -->
         <div class="answer">
-            <p>
-                <strong>Báo cáo về các kỹ năng quản lý dự án:</strong><br><br>
-                <strong>1. Kỹ năng lập kế hoạch và tổ chức:</strong> Kỹ năng lập kế hoạch là yếu tố quan trọng đầu tiên đối với một nhà quản lý dự án.<br>
-                Theo tôi, kỹ năng lập kế hoạch không chỉ đòi hỏi tính cẩn thận mà còn cần sự linh hoạt.<br><br>
-                <strong>2. Kỹ năng lãnh đạo và quản lý nhóm:</strong> Một nhà quản lý dự án giỏi phải có khả năng lãnh đạo, biết cách phân chia công việc.<br>
-                Theo ý kiến của tôi, một nhà lãnh đạo không chỉ là người chỉ đạo mà còn biết lắng nghe.<br><br>
-                <strong>3. Kỹ năng giao tiếp:</strong> Giao tiếp hiệu quả là yếu tố không thể thiếu trong quản lý dự án.<br>
-                Tôi tin rằng giao tiếp không chỉ dừng lại ở việc trao đổi thông tin mà còn ở cách bạn động viên, tạo động lực cho đội ngũ.<br><br>
-                <strong>4. Kỹ năng giải quyết vấn đề và ra quyết định:</strong> Kỹ năng giải quyết vấn đề giúp người quản lý dự án tìm ra các giải pháp tối ưu nhất.<br>
-                Theo tôi, kỹ năng này yêu cầu sự quyết đoán và phân tích kỹ lưỡng.<br><br>
-                <strong>5. Kỹ năng quản lý rủi ro:</strong> Một nhà quản lý dự án hiệu quả phải biết dự đoán và chuẩn bị các phương án dự phòng.<br><br>
-                <strong>6. Kỹ năng sử dụng công cụ quản lý dự án:</strong> Các công cụ quản lý dự án như Trello, JIRA, Wrike giúp theo dõi tiến độ và phân bổ công việc.<br><br>
-                <strong>Kết luận:</strong> Những kỹ năng quản lý dự án là nền tảng để đảm bảo sự thành công của bất kỳ dự án nào.
-            </p>
+            <p><strong>Báo cáo về các kỹ năng quản lý dự án:</strong></p>
+
+            <p><strong>1. Kỹ năng lập kế hoạch và tổ chức:</strong> Kỹ năng lập kế hoạch hiệu quả giúp định hình tiến trình dự án và xác định rủi ro tiềm ẩn.</p>
+
+            <p><strong>2. Kỹ năng lãnh đạo và quản lý nhóm:</strong> Một nhà quản lý dự án giỏi cần khả năng phân chia công việc và lắng nghe nhóm.</p>
+
+            <p><strong>3. Kỹ năng giao tiếp:</strong> Giao tiếp hiệu quả giúp duy trì liên lạc giữa đội ngũ, khách hàng và các bên liên quan.</p>
+
+            <p><strong>4. Kỹ năng giải quyết vấn đề và ra quyết định:</strong> Giải quyết vấn đề và ra quyết định nhanh chóng trong những tình huống khẩn cấp.</p>
+
+            <p><strong>5. Kỹ năng quản lý rủi ro:</strong> Dự đoán và chuẩn bị các phương án dự phòng cho những rủi ro có thể xảy ra.</p>
+
+            <p><strong>6. Kỹ năng sử dụng công cụ quản lý dự án:</strong> Sử dụng công cụ như Trello, JIRA để theo dõi và quản lý công việc hiệu quả.</p>
+
+            <p><strong>Kết luận:</strong> Những kỹ năng quản lý dự án là nền tảng đảm bảo sự thành công của bất kỳ dự án nào.</p>
         </div>
 
         <div class="footer">
             <p>Hà Xuân Lợi - 2000236</p>
-        </div>
+           </div>
     </div>
 
     <script>
@@ -155,7 +177,7 @@
         window.onload = function () {
             setTimeout(function () {
                 document.getElementById('loading').style.display = 'none';
-            }, 2000); // Thời gian chờ 2 giây
+            }, 1500); // Thời gian chờ 1.5 giây
         };
     </script>
 
